@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+                <!-- Mozilla theme -->
+                <link rel="stylesheet" href="css/theme/mozilla.css" id="theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                          <section data-markdown>
+                            # Mozilla
+                            ## Actualité et innovations des projets de Mozilla
+                            ![](./imgs/Mozilla_Firefox_logo_2013.svg)
+                          </section>
+                          <section>
+                            <h1>Premièrement</h1>
+                            <img alt="Bonne année" src="./imgs/bonne_annee.gif" style="width:825px; height:350px;">
+                            <h2>Bonne année 2016&nbsp;!</h2>
+                          </section>
+                          <section data-markdown>
+                            # Sujets évoqués
+
+                            * Rétrospective 2015
+                              * Firefox pour les développeurs
+                              * Firefox OS
+                              * Firefox Hello
+                            * Questions
+                          </section>
+                          <section>
+                            <section data-markdown>
+                              # Firefox pour les développeurs
+                              ![](./imgs/developer.gif)
+                            </section>
+                            <section data-markdown>
+                              ## Web Assembly
+                              ### asm.js sous stéroides (ou presque)
+
+                              * asm.js a été un succès \o/ !
+                                * Porté par Mozilla, Microsoft très intéressé
+                              * Web Assembly : successeur d'asm.js établi dans l'objectif d'un consensus (Mozilla, Google, Microsoft)
+                              * Plus rapide que JavaScript
+                                * Ce n'est pas du JavaScript -&gt; plus de possibilités qu'asm.js
+                            </section>
+                            <section data-markdown>
+                              ![Unreal Engine](./imgs/unreal_engine.jpg)
+                            </section>
+                          </section>
+                        </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
