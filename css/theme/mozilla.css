@@ -14,13 +14,7 @@ body {
   background:url("http://mozorg.cdn.mozilla.net/media/img/sandstone/bg-gradient-sand.png") repeat-x scroll 0 0px, url("http://mozorg.cdn.mozilla.net/media/img/sandstone/bg-sand.png") repeat scroll 0 0px, none repeat scroll 0 0 #F5F1E8;
   color:#333333;
   font-family: 'Open Sans',sans-serif;
-  width: 1024px;
-  height: 640px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
   overflow: hidden;
-  margin: -320px 0px 0px -512px;
 }
 
 .reveal {
@@ -28,6 +22,12 @@ body {
   font-weight: 200;
   letter-spacing: -0.02em;
   color: #eeeeee;
+  width: 1024px;
+  height: 640px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -320px 0px 0px -512px;
 }
 
 ::selection {
